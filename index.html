@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyFit - Recipe Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+        }
+        #recipes {
+            margin-top: 2rem;
+        }
+        .recipe {
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EasyFit</h1>
+        <p>Generate recipes from your ingredients</p>
+    </header>
+    <main>
+        <form id="ingredient-form">
+            <h2>Enter Your Ingredients</h2>
+            <input type="text" id="ingredients" placeholder="Enter ingredients separated by commas">
+            <button type="submit">Generate Recipes</button>
+        </form>
+        <div id="recipes">
+            <h2>Recipes</h2>
+            <div class="recipe">
+                <h3>Sample Recipe 1</h3>
+                <p>This is where the recipe details would appear.</p>
+            </div>
+            <div class="recipe">
+                <h3>Sample Recipe 2</h3>
+                <p>This is where another recipe's details would appear.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
